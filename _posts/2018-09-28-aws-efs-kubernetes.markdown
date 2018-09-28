@@ -25,7 +25,7 @@ In this post I'll go through the relevant kubernetes resources for tackling this
 how to implement it on top of [AWS](https://aws.amazon.com/) using an [EFS](https://aws.amazon.com/efs/)
 storage resource.
 
-## The basic. A kubernetes Volume
+# The basic. A kubernetes Volume
 
 A [**Volume**](https://kubernetes.io/docs/concepts/storage/volumes/) is a kubernetes storage resource **attached
 to a Pod**, and it lives as long as the Pod it's attached to does.
@@ -49,7 +49,7 @@ While the Volume is indeed convenient for the scenarios described above, there's
 it can be mounted only in one Pod. Therefore, a Volume is not a good solution for my scenario, where I
 need binary files to be available in several Pods (to scale horizontally the solution).
 
-## The advanced. A kubernetes Persistent Volume
+# The advanced. A kubernetes Persistent Volume
 
 A [**Persistent Volume**](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a cluster
 resource on its own and has its own lifecycle. It represents a storage resource available to any Pod created in the cluster.
@@ -71,7 +71,7 @@ A Persistent Volume can be [provisioned
 dynamically](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#provisioning) by means of a StorageClass
 definition (using the parameter *provisioner*).
 
-## Steps to mount an EFS resource in a Pod
+# Steps to mount an EFS resource in a Pod
 
 Back to my original problem, how can I mount a disk for sharing state (binary files) between Pods?
 
@@ -302,11 +302,15 @@ spec:
 Checking the Pods logs we can see that the scenario is successfully validated:
 
     kubetail --selector app=test-efs
-    Will tail 3 logs...
+    Will tail 2 logs...
     test-efs-546d6d7456-2fvgp
     test-efs-546d6d7456-2gqx6
-    test-efs-546d6d7456-pwkxp
     [test-efs-546d6d7456-2fvgp] File created, waiting a bit to ensure the other Pod had the time as well
     [test-efs-546d6d7456-2gqx6] File created, waiting a bit to ensure the other Pod had the time as well
     [test-efs-546d6d7456-2fvgp] Both pods generated the file!
     [test-efs-546d6d7456-2gqx6] Both pods generated the file!
+
+# Conclusions
+
+While not very obvious, once you interiorize the concepts around persistent storage, having a shared folder mounted
+in several Pods in a kubernetes cluster running in AWS is quite straight forward.
