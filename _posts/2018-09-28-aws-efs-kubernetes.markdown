@@ -83,7 +83,7 @@ Those are the steps I went through:
 
 An **EFS resource** can be created executing the following command:
 
-> aws efs create-file-system --creation-token efs-for-testing
+    aws efs create-file-system --creation-token efs-for-testing
 
 The response is a JSON payload including a field named *FileSystemId*, which represents the unique identifier
 that should be used to manage the EFS volume. Let's assume the *FileSystemId* is *fs-testing*.
@@ -91,7 +91,7 @@ that should be used to manage the EFS volume. Let's assume the *FileSystemId* is
 EFS creation is an asynchronous process, and before managing it you need to make sure its LifeCycleState is
 *available*. The EFS state can be checked as follows:
 
-> aws efs describe-file-systems --file-system-id fs-testing
+    aws efs describe-file-systems --file-system-id fs-testing
 
 Once the EFS is available,  next step is creating a **mount target** associated to it. A mount target acts as a
 virtual firewall, defining a subnet and a security group that is granted permissions to mount the EFS volume.
@@ -100,11 +100,11 @@ For creating the mount target you need the *subnet-id* and *security-groups* ass
 Usual scenario is that every node will share the same security group, while subnet id will differ based on the Availability
 Zone where the node is located:
 
-> aws ec2 describe-instances --filters &lt;your-filters-to-retrieve-k8s-nodes&gt;
+    aws ec2 describe-instances --filters &lt;your-filters-to-retrieve-k8s-nodes&gt;
 
 Per each SubnetId and SecurityGroupId execute the following command:
 
-> aws efs create-mount-target \
+    aws efs create-mount-target \
     --file-system-id fs-testing \
     --subnet-id {SubnetId} \
     --security-groups {SecurityGroupId}
