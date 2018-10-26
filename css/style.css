@@ -369,6 +369,12 @@ h1 img, h2 img {
   margin: 20px 0;
 }
 
+#post,
+.intro {
+  line-height: 1.58;
+  font-size: 19px;
+}
+
 #post h1 {
   font-size: 1.5em;
   text-indent: 0;
