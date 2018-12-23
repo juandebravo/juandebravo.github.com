@@ -1,0 +1,104 @@
+FIREFOX -> FIREFOX
+v=0
+o=mozilla...THIS_IS_SDPARTA-51.0.1 5016738128976487173 0 IN IP4 0.0.0.0
+s=-
+t=0 0
+a=sendrecv
+a=fingerprint:sha-256 9D:7A:9E:7D:61:16:A5:40:89:BF:A8:A6:58:22:16:A0:32:41:95:CD:9A:DF:39:F5:8D:1B:37:42:49:30:FF:35
+a=group:BUNDLE sdparta_0 sdparta_1
+a=ice-options:trickle
+a=msid-semantic:WMS *
+m=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8
+c=IN IP4 0.0.0.0
+a=sendrecv
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1
+a=ice-pwd:25a3d3b524ece8809934bc8c49464cec
+a=ice-ufrag:840b337e
+a=mid:sdparta_0
+a=msid:{b53c98d3-243e-2949-8991-3c9e57c867cb} {d1bb7bb8-8959-1f4e-882d-2fa8fb971c73}
+a=rtcp-mux
+a=rtpmap:109 opus/48000/2
+a=rtpmap:9 G722/8000/1
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=setup:actpass
+a=ssrc:2564310627 cname:{5487d0fa-d08e-6844-be4f-8f70708f5dad}
+m=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97
+c=IN IP4 0.0.0.0
+a=sendrecv
+a=extmap:1 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1
+a=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1
+a=fmtp:120 max-fs=12288;max-fr=60
+a=fmtp:121 max-fs=12288;max-fr=60
+a=ice-pwd:25a3d3b524ece8809934bc8c49464cec
+a=ice-ufrag:840b337e
+a=mid:sdparta_1
+a=msid:{b53c98d3-243e-2949-8991-3c9e57c867cb} {89c66fff-5371-8340-87b5-1b1413fdedd2}
+a=rtcp-fb:120 nack
+a=rtcp-fb:120 nack pli
+a=rtcp-fb:120 ccm fir
+a=rtcp-fb:120 goog-remb
+a=rtcp-fb:121 nack
+a=rtcp-fb:121 nack pli
+a=rtcp-fb:121 ccm fir
+a=rtcp-fb:121 goog-remb
+a=rtcp-fb:126 nack
+a=rtcp-fb:126 nack pli
+a=rtcp-fb:126 ccm fir
+a=rtcp-fb:126 goog-remb
+a=rtcp-fb:97 nack
+a=rtcp-fb:97 nack pli
+a=rtcp-fb:97 ccm fir
+a=rtcp-fb:97 goog-remb
+a=rtcp-mux
+a=rtpmap:120 VP8/90000
+a=rtpmap:121 VP9/90000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=setup:actpass
+a=ssrc:457887023 cname:{5487d0fa-d08e-6844-be4f-8f70708f5dad}
+
+
+v=0
+o=mozilla...THIS_IS_SDPARTA-51.0.1 73938070546839180 0 IN IP4 0.0.0.0
+s=-
+t=0 0
+a=sendrecv
+a=fingerprint:sha-256 56:26:1F:D4:8B:5B:3F:26:F7:82:AA:9B:BA:8B:10:7D:F3:F0:11:10:09:29:4F:CB:AC:24:57:8D:CE:93:88:65
+a=group:BUNDLE sdparta_0 sdparta_1
+a=ice-options:trickle
+a=msid-semantic:WMS *
+m=audio 9 UDP/TLS/RTP/SAVPF 109
+c=IN IP4 0.0.0.0
+a=sendrecv
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1
+a=ice-pwd:572ad5ef9e65a3400bce7967c12ac348
+a=ice-ufrag:c3d111f9
+a=mid:sdparta_0
+a=msid:{c3c84a6f-2e1f-1944-8378-c96a8429c47a} {bc8086c4-5712-4a4e-85fc-276ca3c08d73}
+a=rtcp-mux
+a=rtpmap:109 opus/48000/2
+a=setup:active
+a=ssrc:2951540564 cname:{e1d106f4-9e91-0c42-a742-7d31fbc92020}
+m=video 9 UDP/TLS/RTP/SAVPF 120
+c=IN IP4 0.0.0.0
+a=sendrecv
+a=extmap:1 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=fmtp:120 max-fs=12288;max-fr=60
+a=ice-pwd:572ad5ef9e65a3400bce7967c12ac348
+a=ice-ufrag:c3d111f9
+a=mid:sdparta_1
+a=msid:{c3c84a6f-2e1f-1944-8378-c96a8429c47a} {43fe6ef9-0426-774b-9bc4-7517adb1c1d8}
+a=rtcp-fb:120 nack
+a=rtcp-fb:120 nack pli
+a=rtcp-fb:120 ccm fir
+a=rtcp-fb:120 goog-remb
+a=rtcp-mux
+a=rtpmap:120 VP8/90000
+a=setup:active
+a=ssrc:1045631921 cname:{e1d106f4-9e91-0c42-a742-7d31fbc92020}
