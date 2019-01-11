@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>oAuth redirect</title>
+</head>
+<body>
+    <script>
+    window.opener.postMessage({
+        type: 'oauth/redirect',
+        href: location.href
+        }, '*');
+    </script>
+</body>
+</html>
