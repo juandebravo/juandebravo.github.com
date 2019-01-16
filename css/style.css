@@ -34,11 +34,22 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 
 body {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
-body, button, input, select, textarea { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, sans-serif; color: #252525; }
+body, button, input, select, textarea {
+  font-family: 'Open Sans', 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, sans-serif;
+  color: #252525;
+}
+
+#archives {
+  margin-left: 10px;
+}
+
+h3.category-head {
+  font-size: 1em;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -372,7 +383,7 @@ h1 img, h2 img {
 #post,
 .intro {
   line-height: 1.58;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 #post h1 {
@@ -439,10 +450,6 @@ code.bash {
   /* background:url("/gfx/juandebravo.png") no-repeat top right;
   height: 160px;
   padding: 0 160px 0 0; */
-}
-
-h3.about_me {
-  color: #D11E27;
 }
 
 .menu .item {

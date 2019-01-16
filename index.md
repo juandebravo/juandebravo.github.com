@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Blog
 ---
 <h2>Blog
   <a class="fadedlink rss" href="http://feeds.feedburner.com/{{ site.feedburner_id }}" title="RSS feed">RSS feed

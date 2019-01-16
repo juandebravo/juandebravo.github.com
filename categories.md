@@ -1,14 +1,14 @@
 ---
 layout: default
+title: Blog tags
 ---
-
+<h2>Blog tags</h2>
 <div id="archives">
 {% assign sorted = site.categories | sort %}
 {% for category in sorted %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
 
     <a name="{{ category_name | slugize }}">
       <h3 class="category-head">
