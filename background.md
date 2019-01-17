@@ -28,28 +28,26 @@ layout: default
           Comprehensive knowledge about client and server architectures, message passing and loosely coupled systems in general.
         </li>
         <li>
+          Deep experience with Python, Ruby, Java and JavaScript.
+        </li>
+        <li>
           Cloud environments: AWS and Google Cloud.
+        </li>
+        <li>
+          <a href="https://www.tid-x.com">TID-X</a> co-organizer.
+        </li>
+        <li>
+          Experienced Scrum master player during more than five years.
         </li>
         <li>
           DevOps tools and culture.
         </li>
         <li>
-          VoIP architecture, design and implementation. Deep knowledge about SIP protocol.
-        </li>
-        <li>
-          Actively involved in open source projects/contributions.
-        </li>
-        <li>
-          Deep experience with Python, Ruby, Java and JavaScript.
-        </li>
-        <li>
           Basic knowledge of Erlang and Scala.
-        </li>
-        <li>
-          Experienced Scrum master player during more than five years.
         </li>
       </ul>
       <h3>Contact</h3>
-      Feel free to contact me at <a class="email" href="mailto:juandebravo@gmail.com">juandebravo@gmail.com</a>
+        Feel free to contact me at
+        <a class="email" href="mailto:juandebravo@gmail.com">juandebravo@gmail.com</a>.
   </div>
 </div>
