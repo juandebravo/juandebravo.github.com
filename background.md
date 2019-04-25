@@ -6,7 +6,7 @@ layout: default
 
 <div class="intro">
   <div>
-    <img src="/gfx/juandebravo.png" style="float: right; width: 20%; margin-left: 10px; border-radius: 20px"/>
+    <img src="/gfx/juandebravo.png" style="float: left; width: 20%; margin-right: 10px; border-radius: 10px"/>
     <p>
       I’m a Senior Engineering Manager with rounded international and multicultural experience used to work in uncertain and challenging environments.
     </p>
