@@ -17,7 +17,7 @@ plugins:
 navigation:
 - text: Dev Blog
   url: /
-- text: Background
+- text: About me
   url: /background/
 - text: Open Source
   url: /open_source/

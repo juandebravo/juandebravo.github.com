@@ -61,28 +61,24 @@ h3.category-head {
 ::selection { background: #447bd3; color: #fff; text-shadow: none; }
 
 
-/* =============================================================================
-   Links
-   ========================================================================== */
+a, a:visited {
+  color: #0d00a7;
+}
 
-a { color: #d11e27; }
-a:visited { color: #d11e27; }
-a:hover { color: #731115; }
-a:focus { outline: thin dotted; }
-
-/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active { outline: 0; }
-
-
-/* =============================================================================
-   Typography
-   ========================================================================== */
+a:hover {
+  color: #020619;
+  outline: none;
+}
 
 abbr[title] { border-bottom: 1px dotted; }
 
-b, strong { font-weight: bold; }
+b, strong {
+  font-weight: bold;
+}
 
-blockquote { margin: 1em 40px; }
+blockquote {
+  margin: 1em 40px;
+}
 
 dfn { font-style: italic; }
 
@@ -253,7 +249,7 @@ header {
 }
 
 .container {
-  background-color: #F4F4F4;
+  background-color: #fafafa;
   border: 1px solid #D5D6D8;
   border-radius: 10px 10px 10px 10px;
   min-height: 250px;
@@ -311,7 +307,7 @@ footer {
   margin-top: 30px;
   padding: 10px 0;
   color: #666;
-  line-height: 1.785em;
+  line-height: 1.8em;
   font-family: helvetica, arial, clean, sans-serif;
   font-size: 0.875em;
 }
@@ -446,42 +442,28 @@ code.bash {
   text-indent: -2000px;
 }
 
-.intro {
-  /* background:url("/gfx/juandebravo.png") no-repeat top right;
-  height: 160px;
-  padding: 0 160px 0 0; */
-}
-
 .menu .item {
   list-style: none;
 }
 
-.menu .item{
-  color: #D11E27;
+.menu .item.active a {
+  color: #0a3b98;
 }
 
-.menu .item.active a{
-  color: #D11E27;
-}
-
-.menu .item a:hover{
+.menu .item a:hover {
   text-decoration: underline;
 }
 
-.menu .item a{
+.menu .item a {
   color: #BBB;
   text-decoration: none;
 }
 
-/* Helper classes */
 .fadedlink {
   opacity: 0.4;
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-property: opacity;
-  -moz-transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-out;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .fadedlink:hover {
@@ -579,7 +561,8 @@ nav li a:hover {
   }
 
   .menu .item+.item::before {
-    content: "-"
+    content: "-";
+    color: #BBB;
   }
 
   h1 {
@@ -640,24 +623,4 @@ nav li a:hover {
   ul, ol {
     padding-left: 10px;
   }
-}
-
-/* ==|== print styles =======================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
 }
