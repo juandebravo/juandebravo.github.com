@@ -250,7 +250,7 @@ header {
 
 .container {
   background-color: #fafafa;
-  border: 1px solid #D5D6D8;
+  /* border: 1px solid #D5D6D8; */
   border-radius: 10px 10px 10px 10px;
   min-height: 250px;
   padding: 20px 30px;
@@ -379,7 +379,7 @@ h1 img, h2 img {
 #post,
 .intro {
   line-height: 1.58;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 #post h1 {
