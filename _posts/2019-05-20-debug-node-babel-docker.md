@@ -92,6 +92,9 @@ in a remote host (a Docker container) through a local binding (port 9229, as des
 Upon adding a debug configuration, file *.vscode/launch.json* will be updated with the new entry. It's important to configure
 the attributes that defines the local and remote source code root path, as well as the source maps location.
 
+Defining properly the VS Code launch configuration was only of the hardest points; if you're having issues [check my
+configuration in the sample project][vs-code-config].
+
 ## Conclusion
 
 The [sample project][github-project] includes any configuration required for the setup.
@@ -114,8 +117,8 @@ Once you have defined a breakpoint in your code in VS Code:
 
 ![Debugger attached](/gfx/posts/es6-node-docker-vscode/debugger.png)
 
-- Launch a request that goes through your breakpoint
-- VS Code stops in your breakpoint
+- Launch a request that goes through your breakpoint.
+- VS Code stops in your breakpoint.
 
 Enjoy :-)
 
@@ -126,3 +129,4 @@ Enjoy :-)
 [docker]: https://www.docker.com/
 [nodemon]: https://nodemon.io/
 [vs-code]: https://code.visualstudio.com/
+[vs-code-config]: https://github.com/juandebravo/setup-node-babel-docker-vscode/blob/master/.vscode/launch.json
