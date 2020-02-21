@@ -122,7 +122,22 @@ These are the tools we're using for our day 2 day work:
 Proactive communication is a key skill if you work in a physical office with your team, but it's even more relevant when working away.
 To keep the team up to speed, and mitigate the effect of  working in different timezones, prior to calling it day I share my notes with the rest on how the day went, issues I had or just the last joke I’ve heard around...
 
+**Under promise and over deliver** is a well known quote, I'd reformulate to **over and over communicate** if you're working remotely.
+
 ## Work from anywhere
 One of the key benefits of remote work is that I can work from anymore, given
 that what I just need is my computer and a good Internet connection. Why should
 I be limiting myself to be in my home office?
+
+## So what's the deal?
+
+According to [State of remote work analysis by Buffer and AngelList](https://lp.buffer.com/state-of-remote-work-2020), 98% of the 
+surveyed would like to work remotely, ast least some of the time, for the rest of their career.
+
+![Sate of remote report 2020](https://uploads-ssl.webflow.com/5d60176738c00e7ae2afeba2/5e3d8ed566a9ae6efd17c61d_work-remotely-rest-of-career%402x.png)
+
+And I don't blame them! While working remotely may have some negative consequences like not being able to unplug or feeling 
+disconnected from the team, you can impact on these consequences by building a company culture around remote work and your own experience as you gain it.
+
+In my experience, the flexibility to work in a flexible schedule and from anywhere are the major advantages, something I'd definitely
+try to keep at least for some years :hammer:
