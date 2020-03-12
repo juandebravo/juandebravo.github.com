@@ -1,11 +1,11 @@
 <ul>
   {% for link in site.navigation %}
-    {% assign current = nil %}
-    {% if page.url == link.url %}
-      {% assign current = 'active' %}
-    {% endif %}
-    <li class="item {{ current }}">
-      <a href="{{ link.url }}">{{ link.text }}</a>
-    </li>
+  {% assign current = nil %}
+  {% if page.url == link.url %}
+  {% assign current = 'active' %}
+  {% endif %}
+  <li class="item {{ current }}">
+    <a href="{{ link.url }}">{{ link.text }}</a>
+  </li>
   {% endfor %}
 </ul>
