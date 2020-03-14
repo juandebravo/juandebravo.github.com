@@ -1,25 +1,25 @@
-safe:         true
-highlighter:  rouge
-permalink:    /:year/:month/:day/:title/
-exclude:      ["CNAME", "Rakefile"]
-title:        Juan de Bravo
-description:  Personal thoughts about technology (@juandebravo)
-url_root:     http://juandebravo.com
-author:       Juan de Bravo
+safe: true
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+exclude: ["CNAME", "Rakefile"]
+title: Juan de Bravo
+description: Personal thoughts about technology (@juandebravo)
+url_root: http://juandebravo.com
+author: Juan de Bravo
 author_short: juandebravo
 author_email: juandebravo@gmail.com
 analytics_ua: UA-32824811-1
 feedburner_id: juandebravo
-disqus_id:    juandebravo
-posts:      _posts
+disqus_id: juandebravo
+posts: _posts
 plugins:
   - jemoji
 navigation:
-- text: Dev Blog
-  url: /
-- text: About me
-  url: /background/
-- text: Open Source
-  url: /open_source/
-- text: Tags
-  url: /categories/
+  - text: Dev Blog
+    url: /
+  - text: About me
+    url: /background/
+  # - text: Open Source
+  #   url: /open_source/
+  - text: Tags
+    url: /categories/
