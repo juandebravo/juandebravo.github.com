@@ -16,12 +16,12 @@ happen during that process:
 
 ![Delivery pipeline](/gfx/posts/github-metrics/delivery_process.png)
 
-That's something that has been running as a background thread in my mind over
+The concepts described in that blog post are something that has been running as a background thread in my mind over
 the last few months, but I am always struggling to invest some time in it.
 
-Until today! I paired with ChatGPT so I could hit two targets with one shot.
+Until today! I paired with ChatGPT and I hit two targets with one shot.
 
-I was curious about the first part of the graph above: how long does it take for a Pull Request to get merged.
+I was curious about the first part of the diagram above: how long does it take for a Pull Request to get merged in my current project?
 
 I asked:
 
@@ -34,7 +34,7 @@ And GPT replied:
 This was a good way to start our relationship for this matter :blush: It helped me to avoid:
 
 - checking which python library should I use.
-- check the API to understand how to obtain each pull request and its status and data.
+- check the github / python library API to understand how to obtain each pull request and its status.
 
 I realized my question was misleading, as it interpreted that I was interested in a specific Pull Request:
 
@@ -68,7 +68,7 @@ It described again the solution, but to be honest I didn't read it.
 At this point, I'm not sure if there's been a big gain in productivity. Perhaps the major advantage is that I didn't need to
 invest some time reviewing a couple of third-party dependencies, but at the same time, I feel I'm trusting blindly what I'm being told.
 
-Unfortunately, things starting to get a bit tedious:
+Unfortunately, things became a bit tedious:
 
 ![Fifth question](/gfx/posts/github-metrics/fifth-question.png)
 
@@ -76,13 +76,12 @@ It apologized for the confusion (so cute :cat:) and pointed to the mistake very 
 
 ![Fifth answer](/gfx/posts/github-metrics/fifth-answer.png)
 
-This got me very confused and intrigued. I could understand that ChatGPT knew about `since` and `until` attributes in the `get_pulls()` method if they had existed in previous versions of the _PyGithub_ library and got deprecated for whatever reason in the last version of the library. But that was not the case, they have never existed. So I have no idea why ChatGPT decided to use `since`, it
-has never existed. My two theories are that it exists in other libraries and learned from that, or it extrapolated other arguments of the REST
+This got me very confused and intrigued. I could understand that ChatGPT knew about `since` and `until` attributes in the `get_pulls()` method if they had existed in previous versions of the _PyGithub_ library and got deprecated for whatever reason in the last version of the library. But that was not the case, they have never existed. So I have no idea why ChatGPT decided to use `since`. My two theories are that it exists in other libraries and learned from that, or it extrapolated other arguments of the REST
 API and adapted its knowledge about the python wrapper. Quite fascinating IMO even though it was wrong this time.
 
 [This is the script](https://gist.github.com/juandebravo/9ca2ea70d9d38c029809763871f9b1b8) associated with the response above. Here GPT made
 a rookie mistake. We are interested in the last 6 months of data, so as soon as one Pull Request is older than that, we can stop iterating over
-previous data.
+previous data (pull requests are order by time desc).
 
 I got a couple of additional errors:
 
@@ -132,8 +131,8 @@ This is [the generated script](https://gist.github.com/juandebravo/33ba2ff6bf9c8
 
 At this point, I think both of us needed a break :laughing:.
 
-The chart was still looking pretty bad, so I did what I usually (try to) do in my day-to-day work, read the code,
-understand what we are doing, add some helpful debug logs, and find the root cause of what was going on.
+The chart was still looking pretty bad, so I did what I usually (try to) do in my day-to-day work: read the code,
+understand what it's doing, add some helpful debug logs, and find the root cause of what's going on.
 
 ![Eleventh question](/gfx/posts/github-metrics/eleventh-question.png)
 
