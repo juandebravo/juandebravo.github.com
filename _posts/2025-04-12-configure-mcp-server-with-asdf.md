@@ -36,14 +36,14 @@ Here's a working configuration example for an MCP server that runs a Node.js app
 Let's break down the important parts of this configuration:
 
 1. **Environment Variables**:
-   - `PATH`: Includes the asdf shims directory first, ensuring that asdf-managed executables are found before system ones
-   - `ASDF_DIR`: Points to your asdf installation directory
-   - `ASDF_DATA_DIR`: Specifies where asdf stores its data
-   - `ASDF_NODEJS_VERSION`: Explicitly sets the Node.js version to use
+   - `PATH`: Includes the asdf shims directory first, ensuring that asdf-managed executables are found before system ones.
+   - `ASDF_DIR`: Points to your asdf installation directory.
+   - `ASDF_DATA_DIR`: Specifies where asdf stores its data.
+   - `ASDF_NODEJS_VERSION`: Explicitly sets the Node.js version to use.
 
 2. **Command Configuration**:
-   - `command`: Set to "node" to use the Node.js executable
-   - `args`: Contains the path to your Node.js application's entry point
+   - `command`: Set to "node" to use the Node.js executable.
+   - `args`: Contains the path to your Node.js application's entry point.
 
 ## Why This Works
 
@@ -73,10 +73,10 @@ The configuration works because it:
 ## Troubleshooting
 
 If you encounter issues:
-1. Verify that the Node.js version specified in `ASDF_NODEJS_VERSION` is installed
-2. Check that all paths in the configuration are correct
-3. Ensure the asdf shims directory is properly set up
-4. Try running the Node.js application directly from the command line to verify it works
+1. Verify that the Node.js version specified in `ASDF_NODEJS_VERSION` is installed.
+2. Check that all paths in the configuration are correct.
+3. Ensure the asdf shims directory is properly set up.
+4. Try running the Node.js application directly from the command line to verify it works.
 
 This configuration provides a robust way to run Node.js applications through MCP while maintaining version consistency through asdf. It's particularly useful in development environments where you need to switch between different Node.js versions for different projects.
 
