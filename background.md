@@ -2,60 +2,62 @@
 layout: default
 ---
 
-<h2>About me</h2>
+<h2>About Me</h2>
 
 <div class="intro">
   <div>
     <img src="/gfx/juandebravo.png" style="float: left; width: 20%; margin-right: 10px; border-radius: 10px"/>
     <p>
-      I’m a Senior Engineering Manager with rounded international and multicultural experience used to work in uncertain and challenging environments.
+      I am a Director of Engineering with extensive international and multicultural experience, thriving in dynamic and challenging environments.
     </p>
     <p>
-      Over fifteen years of professional programming experience.
+      With over twenty years of professional software development experience, I bring a wealth of technical expertise and leadership capabilities.
     </p>
     <p>
-      For 9+ years I've been successfully leading technical teams, combining team management roles with technical leadership in frontend, backend and data streaming technologies.
+      For more than fifteen years, I have successfully led technical teams while maintaining hands-on technical leadership across frontend, backend, and data streaming technologies.
     </p>
   </div>
   <div>
-    <h3>Summary</h3>
+    <h3>Professional Highlights</h3>
     <ul>
       <li>
-        Ten years experience leading technical teams.
+        Fifteen years of experience in technical team leadership and management
       </li>
       <li>
-        Comprehensive knowledge about client and server architectures, message passing and loosely coupled systems in general.
+        Expertise in client-server architectures, message passing systems, and distributed computing
       </li>
       <li>
-        Deep experience with Python, Ruby, Java and JavaScript.
+        Strong proficiency in Python, Ruby, Java, and TypeScript
       </li>
       <li>
-        Cloud environments: AWS and Google Cloud.
+        Extensive experience with cloud platforms (AWS and Google Cloud)
       </li>
       <li>
-        <a href="https://www.tid-x.com">TID-X</a> co-organizer.
+        Deep knowledge of distributed systems technologies including Apache Kafka and Redis
       </li>
       <li>
-        Experienced Scrum master player during more than five years.
+        Co-organizer of <a href="https://www.tid-x.com">TID-X</a>
       </li>
       <li>
-        DevOps tools and culture.
+        Certified Scrum Master with over five years of agile implementation experience
       </li>
       <li>
-        Basic knowledge of Erlang and Scala.
+        Advocate for DevOps practices and culture
+      </li>
+      <li>
+        Working knowledge of Erlang and Scala
       </li>
     </ul>
   </div>
   <div>
     <div>
-      <h3>Contact</h3>
+      <h3>Get in Touch</h3>
     </div>
     <div>
       <p>
-        Feel free to reach me out at
+        I'm always open to new opportunities and collaborations. Feel free to reach out at
         <a class="email" href="mailto:juandebravo@gmail.com">juandebravo@gmail.com</a>.
       </p>
     </div>
-
   </div>
 </div>
