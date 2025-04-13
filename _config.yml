@@ -12,6 +12,7 @@ analytics_ua: UA-32824811-1
 feedburner_id: juandebravo
 disqus_id: juandebravo
 posts: _posts
+recent_posts_limit: 10
 plugins:
   - jemoji
 navigation:
